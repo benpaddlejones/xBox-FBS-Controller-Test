@@ -5,22 +5,22 @@ using UnityEngine;
 public class gameLoop : MonoBehaviour
 {
 
-    public int bulletSpeed;
-    public Rigidbody bulletObject;
-    public Transform barrelEnd;
+    public int ballSpeed;
+    public Rigidbody ballObject;
+    public Transform ballSpawnPoint;
 
-    private void spawnBullet()
+    private void spawnBall()
     {
         Rigidbody b;
-        b = Instantiate(bulletObject, new Vector3(barrelEnd.position.x, barrelEnd.position.y, barrelEnd.position.x), barrelEnd.rotation) as Rigidbody;
-        b.AddForce(b.transform.forward * bulletSpeed);
+        b = Instantiate(ballObject, new Vector3(ballSpawnPoint.position.x, ballSpawnPoint.position.y, ballSpawnPoint.position.z), ballSpawnPoint.rotation) as Rigidbody;
+        b.AddForce(b.transform.forward * ballSpeed);
     }
 
     private void Update()
     {
     if (Input.GetAxis("Fire1") > 0 || Input.GetButtonDown("Fire1"))
         {
-            spawnBullet();
+            spawnBall();
         }
     }
 

@@ -129,7 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.z
@@ -219,7 +219,7 @@ PrefabInstance:
     - target: {fileID: 6414099887081817321, guid: e4e6b90e603e37a43a25de1f65fec757,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6414099887081817321, guid: e4e6b90e603e37a43a25de1f65fec757,
         type: 3}
@@ -327,6 +327,12 @@ Transform:
   m_Father: {fileID: 829126904}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &766218635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6414099887081817321, guid: e4e6b90e603e37a43a25de1f65fec757,
+    type: 3}
+  m_PrefabInstance: {fileID: 125386393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &829126901
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478089337}
   m_Layer: 0
-  m_Name: Barrel
+  m_Name: endCylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,10 +460,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478089336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6, z: 1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 1449691195}
+  m_Father: {fileID: 766218635}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1616868685
@@ -489,10 +495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27cd942be64131143a42479ba39f2d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 500
-  bulletObject: {fileID: 7685788390044310186, guid: 56eac2f076a04f747b876a94e3476ac9,
+  ballSpeed: 1000
+  ballObject: {fileID: 7685788390044310186, guid: 56eac2f076a04f747b876a94e3476ac9,
     type: 3}
-  barrelEnd: {fileID: 1478089337}
+  ballSpawnPoint: {fileID: 1478089337}
 --- !u!4 &1616868687
 Transform:
   m_ObjectHideFlags: 0
